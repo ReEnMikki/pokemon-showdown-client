@@ -179,16 +179,18 @@ const Dex = new class implements ModdedDex {
 
 	pokeballs: string[] | null = null;
 
-	resourcePrefix = (() => {
-		let prefix = '';
-		if (window.document?.location?.protocol !== 'http:') prefix = 'https:';
-		return `${prefix}//${window.Config ? Config.routes.client : 'https://raw.githubusercontent.com/ReEnMikki/pokemon-showdown-client/master/'}/`;
-	})();
+	// resourcePrefix = (() => {
+	// 	let prefix = '';
+	// 	if (window.document?.location?.protocol !== 'http:') prefix = 'https:';
+	// 	return `${prefix}//${window.Config ? Config.routes.client : 'https://raw.githubusercontent.com/ReEnMikki/pokemon-showdown-client/master/'}/`;
+	// })();
+	resourcePrefix = 'https://raw.githubusercontent.com/ReEnMikki/pokemon-showdown-client/master/';
 
-	fxPrefix = (() => {
-		const protocol = (window.document?.location?.protocol !== 'http:') ? 'https:' : '';
-		return `${protocol}//${window.Config ? Config.routes.client : 'play.pokemonshowdown.com'}/fx/`;
-	})();
+	// fxPrefix = (() => {
+	// 	const protocol = (window.document?.location?.protocol !== 'http:') ? 'https:' : '';
+	// 	return `${protocol}//${window.Config ? Config.routes.client : 'play.pokemonshowdown.com'}/fx/`;
+	// })();
+	fxPrefix = 'https://raw.githubusercontent.com/ReEnMikki/pokemon-showdown-client/master/fx/';
 
 	loadedSpriteData = {xy: 1, bw: 0};
 	moddedDexes: {[mod: string]: ModdedDex} = {};
