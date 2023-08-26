@@ -1552,7 +1552,7 @@ export class BattleScene implements BattleSceneStub {
 		this.bgmNum = bgmNum;
 
 		switch (bgmNum) {
-			case 1:
+		case 1:
                 this.bgm = BattleSound.loadBgm('audio/Abandoned_Temple.mp3', 0, 77689, this.bgm);
                 break;
         case 2:
