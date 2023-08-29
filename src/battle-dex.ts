@@ -573,7 +573,7 @@ const Dex = new class implements ModdedDex {
 			const randomIntroNum = Math.floor(Math.random() * 6) + 1;
 
 			spriteData.cryurl = 'audio/cries/' + baseSpeciesid;
-			spriteData.introurl = 'audio/intros/' + randomIntroNum + baseSpeciesid;
+			spriteData.introurl = 'audio/intros/' + baseSpeciesid + randomIntroNum;
 			spriteData.outrourl = 'audio/outros/' + baseSpeciesid;
 			spriteData.morphurl = 'audio/morphs/' + baseSpeciesid;
 			
