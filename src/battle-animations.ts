@@ -1552,186 +1552,186 @@ export class BattleScene implements BattleSceneStub {
 		this.bgmNum = bgmNum;
 
 		switch (bgmNum) {
-		case 1:
-                this.bgm = BattleSound.loadBgm('audio/Abandoned_Temple.mp3', 0, 77689, this.bgm);
+        case 1:
+                this.bgm = BattleSound.loadBgm('audio/Abandoned_Temple.mp3', 1, 77688, this.bgm);
                 break;
         case 2:
-                this.bgm = BattleSound.loadBgm('audio/Arena_Football.mp3', 0, 70992, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Arena_Football.mp3', 1, 70991, this.bgm);
                 break;
         case 3:
-                this.bgm = BattleSound.loadBgm('audio/Bamboo_Forest.mp3', 0, 65880, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Bamboo_Forest.mp3', 1, 65879, this.bgm);
                 break;
         case 4:
-                this.bgm = BattleSound.loadBgm('audio/Blown_Up_Rig.mp3', 0, 61257, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Blown_Up_Rig.mp3', 1, 61256, this.bgm);
                 break;
         case 5:
-                this.bgm = BattleSound.loadBgm('audio/Burnt_Village.mp3', 0, 60648, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Burnt_Village.mp3', 1, 60647, this.bgm);
                 break;
         case 6:
-                this.bgm = BattleSound.loadBgm('audio/Camp_britain_boss.mp3', 0, 59092, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Camp_britain_boss.mp3', 1, 59091, this.bgm);
                 break;
         case 7:
-                this.bgm = BattleSound.loadBgm('audio/Castle.mp3', 0, 64080, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Castle.mp3', 1, 64079, this.bgm);
                 break;
         case 8:
-                this.bgm = BattleSound.loadBgm('audio/Colosseum.mp3', 0, 60056, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Colosseum.mp3', 1, 60055, this.bgm);
                 break;
         case 9:
-                this.bgm = BattleSound.loadBgm('audio/Destroyed_Gray_Dragons_Dojo.mp3', 0, 62544, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Destroyed_Gray_Dragons_Dojo.mp3', 1, 62543, this.bgm);
                 break;
         case 10:
-                this.bgm = BattleSound.loadBgm('audio/Dynasty_Tournament.mp3', 0, 88824, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Dynasty_Tournament.mp3', 1, 88823, this.bgm);
                 break;
         case 11:
-                this.bgm = BattleSound.loadBgm('audio/Falcons_Gorge.mp3', 0, 65358, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Falcons_Gorge.mp3', 1, 65357, this.bgm);
                 break;
         case 12:
-                this.bgm = BattleSound.loadBgm('audio/Fight10_black_warrior.mp3', 0, 86387, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight10_black_warrior.mp3', 1, 86386, this.bgm);
                 break;
         case 13:
-                this.bgm = BattleSound.loadBgm('audio/Fight11_ronin.mp3', 0, 61989, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight11_ronin.mp3', 1, 61988, this.bgm);
                 break;
         case 14:
-                this.bgm = BattleSound.loadBgm('audio/Fight12_deadly_smoke.mp3', 0, 54883, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight12_deadly_smoke.mp3', 1, 54882, this.bgm);
                 break;
         case 15:
-                this.bgm = BattleSound.loadBgm('audio/Fight13_old_sensei.mp3', 0, 73900, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight13_old_sensei.mp3', 1, 73899, this.bgm);
                 break;
         case 16:
-                this.bgm = BattleSound.loadBgm('audio/Fight14_ship_battle.mp3', 0, 56033, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight14_ship_battle.mp3', 1, 56032, this.bgm);
                 break;
         case 17:
-                this.bgm = BattleSound.loadBgm('audio/Fight15_shadow_lady.mp3', 0, 68598, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight15_shadow_lady.mp3', 1, 68597, this.bgm);
                 break;
         case 18:
-                this.bgm = BattleSound.loadBgm('audio/Fight1_samurai_spirit.mp3', 0, 58671, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight1_samurai_spirit.mp3', 1, 58670, this.bgm);
                 break;
         case 19:
-                this.bgm = BattleSound.loadBgm('audio/Fight21_lesson_in_the_dark_room.mp3', 0, 78263, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight21_lesson_in_the_dark_room.mp3', 1, 78262, this.bgm);
                 break;
         case 20:
-                this.bgm = BattleSound.loadBgm('audio/Fight22_heavenly_clouds.mp3', 0, 94981, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight22_heavenly_clouds.mp3', 1, 94980, this.bgm);
                 break;
         case 21:
-                this.bgm = BattleSound.loadBgm('audio/Fight23_burning_town.mp3', 0, 116036, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight23_burning_town.mp3', 1, 116035, this.bgm);
                 break;
         case 22:
-                this.bgm = BattleSound.loadBgm('audio/Fight24_ruins_village.mp3', 0, 68652, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight24_ruins_village.mp3', 1, 68651, this.bgm);
                 break;
         case 23:
-                this.bgm = BattleSound.loadBgm('audio/Fight25_hive.mp3', 0, 72936, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight25_hive.mp3', 1, 72935, this.bgm);
                 break;
         case 24:
-                this.bgm = BattleSound.loadBgm('audio/Fight28_flying_rocks.mp3', 0, 74736, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight28_flying_rocks.mp3', 1, 74735, this.bgm);
                 break;
         case 25:
-                this.bgm = BattleSound.loadBgm('audio/Fight30_gates_of_shadows.mp3', 0, 76608, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight30_gates_of_shadows.mp3', 1, 76607, this.bgm);
                 break;
         case 26:
-                this.bgm = BattleSound.loadBgm('audio/Fight31_graveyard_ships.mp3', 0, 81288, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight31_graveyard_ships.mp3', 1, 81287, this.bgm);
                 break;
         case 27:
-                this.bgm = BattleSound.loadBgm('audio/Fight32_starship.mp3', 0, 86436, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight32_starship.mp3', 1, 86435, this.bgm);
                 break;
         case 28:
-                this.bgm = BattleSound.loadBgm('audio/Fight33_stone_forest.mp3', 0, 66852, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight33_stone_forest.mp3', 1, 66851, this.bgm);
                 break;
         case 29:
-                this.bgm = BattleSound.loadBgm('audio/Fight34_halls_of_the_dead_heroes.mp3', 0, 96026, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight34_halls_of_the_dead_heroes.mp3', 1, 96025, this.bgm);
                 break;
         case 30:
-                this.bgm = BattleSound.loadBgm('audio/Fight36_stardocks.mp3', 0, 78289, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight36_stardocks.mp3', 1, 78288, this.bgm);
                 break;
         case 31:
-                this.bgm = BattleSound.loadBgm('audio/Fight37_Epic_Titan_Fight.mp3', 0, 82338, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight37_Epic_Titan_Fight.mp3', 1, 82337, this.bgm);
                 break;
         case 32:
-                this.bgm = BattleSound.loadBgm('audio/Fight3_vengeance.mp3', 0, 56895, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight3_vengeance.mp3', 1, 56894, this.bgm);
                 break;
         case 33:
-                this.bgm = BattleSound.loadBgm('audio/Fight5_ninja_in_the_night.mp3', 0, 70609, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight5_ninja_in_the_night.mp3', 1, 70608, this.bgm);
                 break;
         case 34:
-                this.bgm = BattleSound.loadBgm('audio/Fight6_sparring.mp3', 0, 77192, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight6_sparring.mp3', 1, 77191, this.bgm);
                 break;
         case 35:
-                this.bgm = BattleSound.loadBgm('audio/Fight7_fat_boss.mp3', 0, 76852, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight7_fat_boss.mp3', 1, 76851, this.bgm);
                 break;
         case 36:
-                this.bgm = BattleSound.loadBgm('audio/Fight8_final_boss.mp3', 0, 78263, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Fight8_final_boss.mp3', 1, 78262, this.bgm);
                 break;
         case 37:
-                this.bgm = BattleSound.loadBgm('audio/Final_Battle_Bottom.mp3', 0, 84929, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Final_Battle_Bottom.mp3', 1, 84928, this.bgm);
                 break;
         case 38:
-                this.bgm = BattleSound.loadBgm('audio/Final_Battle_Top.mp3', 0, 81599, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Final_Battle_Top.mp3', 1, 81598, this.bgm);
                 break;
         case 39:
-                this.bgm = BattleSound.loadBgm('audio/Gray_Dragons_Dojo.mp3', 0, 86361, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Gray_Dragons_Dojo.mp3', 1, 86360, this.bgm);
                 break;
         case 40:
-                this.bgm = BattleSound.loadBgm('audio/Herald_Citadel.mp3', 0, 70224, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Herald_Citadel.mp3', 1, 70223, this.bgm);
                 break;
         case 41:
-                this.bgm = BattleSound.loadBgm('audio/Inner_Evil.mp3', 0, 66552, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Inner_Evil.mp3', 1, 66551, this.bgm);
                 break;
         case 42:
-                this.bgm = BattleSound.loadBgm('audio/Island_Village.mp3', 0, 58608, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Island_Village.mp3', 1, 58607, this.bgm);
                 break;
         case 43:
-                this.bgm = BattleSound.loadBgm('audio/Legion_Future.mp3', 0, 73096, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Legion_Future.mp3', 1, 73095, this.bgm);
                 break;
         case 44:
-                this.bgm = BattleSound.loadBgm('audio/Palace.mp3', 0, 73900, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Palace.mp3', 1, 73899, this.bgm);
                 break;
         case 45:
-                this.bgm = BattleSound.loadBgm('audio/Pirate_Justice.mp3', 0, 60120, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Pirate_Justice.mp3', 1, 60119, this.bgm);
                 break;
         case 46:
-                this.bgm = BattleSound.loadBgm('audio/Raids_arkhos.mp3', 0, 75472, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Raids_arkhos.mp3', 1, 75471, this.bgm);
                 break;
         case 47:
-                this.bgm = BattleSound.loadBgm('audio/Raids_hoaxen.mp3', 0, 64062, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Raids_hoaxen.mp3', 1, 64061, this.bgm);
                 break;
         case 48:
-                this.bgm = BattleSound.loadBgm('audio/Shadow_Descendant.mp3', 0, 78000, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Shadow_Descendant.mp3', 1, 77999, this.bgm);
                 break;
         case 49:
-                this.bgm = BattleSound.loadBgm('audio/Simulation_in_the_Void_Room.mp3', 0, 61128, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Simulation_in_the_Void_Room.mp3', 1, 61127, this.bgm);
                 break;
         case 50:
-                this.bgm = BattleSound.loadBgm('audio/Sphere_Temple.mp3', 0, 59688, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Sphere_Temple.mp3', 1, 59687, this.bgm);
                 break;
         case 51:
-                this.bgm = BattleSound.loadBgm('audio/Starship.mp3', 0, 73900, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Starship.mp3', 1, 73899, this.bgm);
                 break;
         case 52:
-                this.bgm = BattleSound.loadBgm('audio/Street_Fight.mp3', 0, 84720, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Street_Fight.mp3', 1, 84719, this.bgm);
                 break;
         case 53:
-                this.bgm = BattleSound.loadBgm('audio/Temple_Warp.mp3', 0, 73872, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Temple_Warp.mp3', 1, 73871, this.bgm);
                 break;
         case 54:
-                this.bgm = BattleSound.loadBgm('audio/Theatre_of_Legends.mp3', 0, 71568, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Theatre_of_Legends.mp3', 1, 71567, this.bgm);
                 break;
         case 55:
-                this.bgm = BattleSound.loadBgm('audio/Thunder.mp3', 0, 70960, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Thunder.mp3', 1, 70959, this.bgm);
                 break;
         case 56:
-                this.bgm = BattleSound.loadBgm('audio/Timeless_Village.mp3', 0, 115332, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Timeless_Village.mp3', 1, 115331, this.bgm);
                 break;
         case 57:
-                this.bgm = BattleSound.loadBgm('audio/Training_in_the_Dome.mp3', 0, 77232, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Training_in_the_Dome.mp3', 1, 77231, this.bgm);
                 break;
         case 58:
-                this.bgm = BattleSound.loadBgm('audio/Valley.mp3', 0, 62694, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Valley.mp3', 1, 62693, this.bgm);
                 break;
         case 59:
-                this.bgm = BattleSound.loadBgm('audio/Void_room_glitch.mp3', 0, 58605, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Void_room_glitch.mp3', 1, 58604, this.bgm);
                 break;
         case 60:
 		default:
-                this.bgm = BattleSound.loadBgm('audio/Wastelands.mp3', 0, 77624, this.bgm);
+                this.bgm = BattleSound.loadBgm('audio/Wastelands.mp3', 1, 77623, this.bgm);
                 break;
 		}
 
@@ -1984,6 +1984,9 @@ export class PokemonSprite extends Sprite {
 	};
 	forme = '';
 	cryurl: string | undefined = undefined;
+	introurl: string | undefined = undefined;
+	outrourl: string | undefined = undefined;
+	morphurl: string | undefined = undefined;
 
 	subsp: SpriteData | null = null;
 	$sub: JQuery | null = null;
@@ -2008,6 +2011,9 @@ export class PokemonSprite extends Sprite {
 	constructor(spriteData: SpriteData | null, pos: InitScenePos, scene: BattleScene, isFrontSprite: boolean) {
 		super(spriteData, pos, scene);
 		this.cryurl = this.sp.cryurl;
+		this.introurl = this.sp.introurl;
+		this.outrourl = this.sp.outrourl;
+		this.morphurl = this.sp.morphurl;
 		this.isFrontSprite = isFrontSprite;
 	}
 	destroy() {
@@ -2058,6 +2064,9 @@ export class PokemonSprite extends Sprite {
 		if (!this.oldsp) return;
 		let sp = this.oldsp;
 		this.cryurl = sp.cryurl;
+		this.introurl = sp.introurl;
+		this.outrourl = sp.outrourl;
+		this.morphurl = sp.morphurl;
 		this.sp = sp;
 		this.oldsp = null;
 
@@ -2347,6 +2356,9 @@ export class PokemonSprite extends Sprite {
 		if (this.cryurl) {
 			BattleSound.playEffect(this.cryurl);
 		}
+		if (this.introurl) {
+			BattleSound.playEffect(this.introurl);
+		}
 		this.$el.css(this.scene.pos({
 			display: 'block',
 			x: this.x,
@@ -2567,6 +2579,9 @@ export class PokemonSprite extends Sprite {
 		if (this.cryurl) {
 			BattleSound.playEffect(this.cryurl);
 		}
+		if (this.outrourl) {
+			BattleSound.playEffect(this.outrourl);
+		}
 		this.anim({
 			y: this.y - 80,
 			opacity: 0,
@@ -2609,6 +2624,7 @@ export class PokemonSprite extends Sprite {
 		}
 		this.sp = sp;
 		this.cryurl = sp.cryurl;
+		this.morphurl = sp.morphurl;
 
 		if (!this.scene.animating) return;
 		let speciesid = toID(pokemon.getSpeciesForme());
@@ -2661,6 +2677,9 @@ export class PokemonSprite extends Sprite {
 			}, oldsp), 300, () => {
 				if (this.cryurl && doCry) {
 					BattleSound.playEffect(this.cryurl);
+				}
+				if (this.morphurl && doCry) {
+					BattleSound.playEffect(this.morphurl);
 				}
 				this.$el.replaceWith($newEl);
 				this.$el = $newEl;
