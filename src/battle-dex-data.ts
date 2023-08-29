@@ -562,7 +562,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	ababo: 1488 + 35,
 	scattervein: 1488 + 36,
 	
-	ancientoverlord: 1524 + 0,
+	ancientoverlord: 1536 + 0,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
