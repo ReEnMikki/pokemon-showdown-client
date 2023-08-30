@@ -806,6 +806,10 @@
 			buf += '<button name="setBg" value="ocean"' + (cur === 'ocean' ? ' class="cur"' : '') + '><span class="bg" style="background-position:0 -' + (90 * 3) + 'px"></span>Ocean</button>';
 			buf += '<button name="setBg" value="shaymin"' + (cur === 'shaymin' ? ' class="cur"' : '') + '><span class="bg" style="background-position:0 -' + (90 * 4) + 'px"></span>Shaymin</button>';
 			buf += '<button name="setBg" value="solidblue"' + (cur === 'solidblue' ? ' class="cur"' : '') + '><span class="bg" style="background: #344b6c"></span>Solid blue</button>';
+			buf += '<button name="setBg" value="itu"' + (cur === 'itu' ? ' class="cur"' : '') + '><span class="bg" style="background-position:0 -' + (90 * 6) + 'px"></span>Itu</button>';
+			buf += '<button name="setBg" value="ambient"' + (cur === 'ambient' ? ' class="cur"' : '') + '><span class="bg" style="background-position:0 -' + (90 * 7) + 'px"></span>Ambient</button>';
+			buf += '<button name="setBg" value="arena"' + (cur === 'arena' ? ' class="cur"' : '') + '><span class="bg" style="background-position:0 -' + (90 * 8) + 'px"></span>Arena</button>';
+			buf += '<button name="setBg" value="void"' + (cur === 'void' ? ' class="cur"' : '') + '><span class="bg" style="background-position:0 -' + (90 * 9) + 'px"></span>Void</button>';
 
 			buf += '</div><div style="clear:left"></div>';
 			buf += '<p><strong>Custom</strong></p>';

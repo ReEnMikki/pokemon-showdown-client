@@ -63,7 +63,7 @@ if (!Object.assign) {
 }
 if (!Object.create) {
 	Object.create = function (proto: any) {
-		function F() {}
+		function F() { }
 		F.prototype = proto;
 		return new (F as any)();
 	};
@@ -73,7 +73,7 @@ if (!window.console) {
 	// I don't actually know if this will cause problems when you open devtools,
 	// but that's something I can figure out if I ever bother testing in IE8
 	(window as any).console = {
-		log() {},
+		log() { },
 	};
 }
 
@@ -179,7 +179,7 @@ declare const ColorThief: any;
 const PSBackground = new class extends PSStreamModel {
 	id = '';
 	curId = '';
-	attrib: {url: string, title: string, artist: string} | null = null;
+	attrib: { url: string, title: string, artist: string } | null = null;
 	changeCount = 0;
 	menuColors: string[] | null = null;
 
@@ -194,7 +194,7 @@ const PSBackground = new class extends PSStreamModel {
 			} else if (bg.length >= 7) {
 				this.set(bg[0], bg[1], bg.slice(2));
 			}
-		} catch {}
+		} catch { }
 	}
 	save(bgUrl: string) {
 		if (this.id !== 'custom') {
@@ -213,7 +213,7 @@ const PSBackground = new class extends PSStreamModel {
 			if (location.host === 'smogtours.psim.us') {
 				bgid = 'shaymin';
 			} else if (location.host === Config.routes.client) {
-				const bgs = ['horizon', 'ocean', 'waterfall', 'shaymin', 'charizards'];
+				const bgs = ['horizon', 'ocean', 'waterfall', 'shaymin', 'charizards', 'itu', 'ambient', 'arena'];
 				bgid = bgs[Math.floor(Math.random() * 5)];
 				if (bgid === this.curId) bgid = bgs[Math.floor(Math.random() * 5)];
 			}
@@ -233,90 +233,158 @@ const PSBackground = new class extends PSStreamModel {
 		// menuColors, attrib
 		let attrib = null;
 		switch (bgid) {
-		case 'horizon':
-			menuColors = [
-				"318.87640449438203,35.177865612648226%",
-				"216,46.2962962962963%",
-				"221.25,32.25806451612904%",
-				"197.8021978021978,52.60115606936417%",
-				"232.00000000000003,19.480519480519483%",
-				"228.38709677419354,60.7843137254902%",
-			];
-			attrib = {
-				url: 'https://vtas.deviantart.com/art/Pokemon-Horizon-312267168',
-				title: 'Horizon',
-				artist: 'Vivian Zou',
-			};
-			break;
-		case 'ocean':
-			menuColors = [
-				"82.8169014084507,34.63414634146342%",
-				"216.16438356164383,29.55465587044534%",
-				"212.92682926829266,59.42028985507245%",
-				"209.18918918918916,57.51295336787566%",
-				"199.2857142857143,48.275862068965495%",
-				"213.11999999999998,55.06607929515419%",
-			];
-			attrib = {
-				url: 'https://quanyails.deviantart.com/art/Sunrise-Ocean-402667154',
-				title: 'Sunrise Ocean',
-				artist: 'Quanyails',
-			};
-			break;
-		case 'waterfall':
-			menuColors = [
-				"119.31034482758622,37.66233766233767%",
-				"184.36363636363635,23.012552301255226%",
-				"108.92307692307692,37.14285714285714%",
-				"70.34482758620689,20.567375886524818%",
-				"98.39999999999998,36.76470588235296%",
-				"140,38.18181818181818%",
-			];
-			attrib = {
-				url: 'https://yilx.deviantart.com/art/Irie-372292729',
-				title: 'Irie',
-				artist: 'Samuel Teo',
-			};
-			break;
-		case 'shaymin':
-			menuColors = [
-				"39.000000000000064,21.7391304347826%",
-				"170.00000000000003,2.380952380952378%",
-				"157.5,11.88118811881188%",
-				"174.78260869565216,12.041884816753928%",
-				"185.00000000000003,12.76595744680851%",
-				"20,5.660377358490567%",
-			];
-			attrib = {
-				url: 'http://cargocollective.com/bluep',
-				title: 'Shaymin',
-				artist: 'Daniel Kong',
-			};
-			break;
-		case 'charizards':
-			menuColors = [
-				"37.159090909090914,74.57627118644066%",
-				"10.874999999999998,70.79646017699115%",
-				"179.51612903225808,52.10084033613446%",
-				"20.833333333333336,36.73469387755102%",
-				"192.3076923076923,80.41237113402063%",
-				"210,29.629629629629633%",
-			];
-			attrib = {
-				url: 'https://seiryuuden.deviantart.com/art/The-Ultimate-Mega-Showdown-Charizards-414587079',
-				title: 'Charizards',
-				artist: 'Jessica Valencia',
-			};
-			break;
-		case 'digimon':
-			menuColors = [
-				"170.45454545454544,27.500000000000004%",
-				"84.70588235294119,13.821138211382115%",
-				"112.50000000000001,7.8431372549019605%",
-				"217.82608695652175,54.761904761904766%",
-				"0,1.6949152542372816%",
-				"",
-			];
+			case 'horizon':
+				menuColors = [
+					"318.87640449438203,35.177865612648226%",
+					"216,46.2962962962963%",
+					"221.25,32.25806451612904%",
+					"197.8021978021978,52.60115606936417%",
+					"232.00000000000003,19.480519480519483%",
+					"228.38709677419354,60.7843137254902%",
+				];
+				attrib = {
+					url: 'https://vtas.deviantart.com/art/Pokemon-Horizon-312267168',
+					title: 'Horizon',
+					artist: 'Vivian Zou',
+				};
+				break;
+			case 'ocean':
+				menuColors = [
+					"82.8169014084507,34.63414634146342%",
+					"216.16438356164383,29.55465587044534%",
+					"212.92682926829266,59.42028985507245%",
+					"209.18918918918916,57.51295336787566%",
+					"199.2857142857143,48.275862068965495%",
+					"213.11999999999998,55.06607929515419%",
+				];
+				attrib = {
+					url: 'https://quanyails.deviantart.com/art/Sunrise-Ocean-402667154',
+					title: 'Sunrise Ocean',
+					artist: 'Quanyails',
+				};
+				break;
+			case 'waterfall':
+				menuColors = [
+					"119.31034482758622,37.66233766233767%",
+					"184.36363636363635,23.012552301255226%",
+					"108.92307692307692,37.14285714285714%",
+					"70.34482758620689,20.567375886524818%",
+					"98.39999999999998,36.76470588235296%",
+					"140,38.18181818181818%",
+				];
+				attrib = {
+					url: 'https://yilx.deviantart.com/art/Irie-372292729',
+					title: 'Irie',
+					artist: 'Samuel Teo',
+				};
+				break;
+			case 'shaymin':
+				menuColors = [
+					"39.000000000000064,21.7391304347826%",
+					"170.00000000000003,2.380952380952378%",
+					"157.5,11.88118811881188%",
+					"174.78260869565216,12.041884816753928%",
+					"185.00000000000003,12.76595744680851%",
+					"20,5.660377358490567%",
+				];
+				attrib = {
+					url: 'http://cargocollective.com/bluep',
+					title: 'Shaymin',
+					artist: 'Daniel Kong',
+				};
+				break;
+			case 'charizards':
+				menuColors = [
+					"37.159090909090914,74.57627118644066%",
+					"10.874999999999998,70.79646017699115%",
+					"179.51612903225808,52.10084033613446%",
+					"20.833333333333336,36.73469387755102%",
+					"192.3076923076923,80.41237113402063%",
+					"210,29.629629629629633%",
+				];
+				attrib = {
+					url: 'https://seiryuuden.deviantart.com/art/The-Ultimate-Mega-Showdown-Charizards-414587079',
+					title: 'Charizards',
+					artist: 'Jessica Valencia',
+				};
+				break;
+			case 'itu':
+				menuColors = [
+					"318.87640449438203,35.177865612648226%",
+					"216,46.2962962962963%",
+					"221.25,32.25806451612904%",
+					"197.8021978021978,52.60115606936417%",
+					"232.00000000000003,19.480519480519483%",
+					"228.38709677419354,60.7843137254902%",
+				];
+				attrib = {
+					url: '../fx/client-bg-itu.jpg',
+					title: 'Itu',
+					artist: 'Nekki',
+				};
+				break;
+			case 'ambient':
+				menuColors = [
+					"318.87640449438203,35.177865612648226%",
+					"216,46.2962962962963%",
+					"221.25,32.25806451612904%",
+					"197.8021978021978,52.60115606936417%",
+					"232.00000000000003,19.480519480519483%",
+					"228.38709677419354,60.7843137254902%",
+				];
+				attrib = {
+					url: '../fx/client-bg-ambient.jpg',
+					title: 'Ambient',
+					artist: 'Nekki',
+				};
+			case 'arena':
+				menuColors = [
+					"318.87640449438203,35.177865612648226%",
+					"216,46.2962962962963%",
+					"221.25,32.25806451612904%",
+					"197.8021978021978,52.60115606936417%",
+					"232.00000000000003,19.480519480519483%",
+					"228.38709677419354,60.7843137254902%",
+				];
+				attrib = {
+					url: '../fx/client-bg-arena.jpg',
+					title: 'Arena',
+					artist: 'Nekki',
+				};
+			case 'void':
+				menuColors = [
+					"318.87640449438203,35.177865612648226%",
+					"216,46.2962962962963%",
+					"221.25,32.25806451612904%",
+					"197.8021978021978,52.60115606936417%",
+					"232.00000000000003,19.480519480519483%",
+					"228.38709677419354,60.7843137254902%",
+				];
+				attrib = {
+					url: '../fx/client-bg-void.jpg',
+					title: 'Void',
+					artist: 'Nekki',
+				};
+				break;
+			case 'void':
+				menuColors = [
+					"318.87640449438203,35.177865612648226%",
+					"216,46.2962962962963%",
+					"221.25,32.25806451612904%",
+					"197.8021978021978,52.60115606936417%",
+					"232.00000000000003,19.480519480519483%",
+					"228.38709677419354,60.7843137254902%",
+				];
+				break;
+			case 'digimon':
+				menuColors = [
+					"170.45454545454544,27.500000000000004%",
+					"84.70588235294119,13.821138211382115%",
+					"112.50000000000001,7.8431372549019605%",
+					"217.82608695652175,54.761904761904766%",
+					"0,1.6949152542372816%",
+					"",
+				];
 		}
 		if (!menuColors && bgUrl.charAt(0) === '#') {
 			const r = parseInt(bgUrl.slice(1, 3), 16) / 255;
@@ -357,7 +425,7 @@ const PSBackground = new class extends PSStreamModel {
 				}
 				this.menuColors = menuColors;
 				PSBackground.save(bgUrl);
-			} catch {}
+			} catch { }
 		};
 		img.src = bgUrl;
 	}
@@ -372,9 +440,9 @@ const PSBackground = new class extends PSStreamModel {
 		const s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
 		let h = 0;
 		switch (max) {
-		case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-		case g: h = (b - r) / d + 2; break;
-		case b: h = (r - g) / d + 4; break;
+			case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+			case g: h = (b - r) / d + 2; break;
+			case b: h = (r - g) / d + 4; break;
 		}
 		h /= 6;
 		return `${h * 360},${s * 100}%`;
