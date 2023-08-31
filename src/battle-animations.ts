@@ -1984,9 +1984,9 @@ export class PokemonSprite extends Sprite {
 	};
 	forme = '';
 	cryurl: string | undefined = undefined;
-	introurl: string | undefined = undefined;
-	outrourl: string | undefined = undefined;
-	morphurl: string | undefined = undefined;
+	// introurl: string | undefined = undefined;
+	// outrourl: string | undefined = undefined;
+	// morphurl: string | undefined = undefined;
 
 	subsp: SpriteData | null = null;
 	$sub: JQuery | null = null;
@@ -2011,9 +2011,9 @@ export class PokemonSprite extends Sprite {
 	constructor(spriteData: SpriteData | null, pos: InitScenePos, scene: BattleScene, isFrontSprite: boolean) {
 		super(spriteData, pos, scene);
 		this.cryurl = this.sp.cryurl;
-		this.introurl = this.sp.introurl;
-		this.outrourl = this.sp.outrourl;
-		this.morphurl = this.sp.morphurl;
+		// this.introurl = this.sp.introurl;
+		// this.outrourl = this.sp.outrourl;
+		// this.morphurl = this.sp.morphurl;
 		this.isFrontSprite = isFrontSprite;
 	}
 	destroy() {
@@ -2064,9 +2064,9 @@ export class PokemonSprite extends Sprite {
 		if (!this.oldsp) return;
 		let sp = this.oldsp;
 		this.cryurl = sp.cryurl;
-		this.introurl = sp.introurl;
-		this.outrourl = sp.outrourl;
-		this.morphurl = sp.morphurl;
+		// this.introurl = sp.introurl;
+		// this.outrourl = sp.outrourl;
+		// this.morphurl = sp.morphurl;
 		this.sp = sp;
 		this.oldsp = null;
 
@@ -2356,9 +2356,9 @@ export class PokemonSprite extends Sprite {
 		if (this.cryurl) {
 			BattleSound.playEffect(this.cryurl);
 		}
-		if (this.introurl) {
-			BattleSound.playEffect(this.introurl);
-		}
+		// if (this.introurl) {
+		// 	BattleSound.playEffect(this.introurl);
+		// }
 		this.$el.css(this.scene.pos({
 			display: 'block',
 			x: this.x,
@@ -2579,9 +2579,9 @@ export class PokemonSprite extends Sprite {
 		if (this.cryurl) {
 			BattleSound.playEffect(this.cryurl);
 		}
-		if (this.outrourl) {
-			BattleSound.playEffect(this.outrourl);
-		}
+		// if (this.outrourl) {
+		// 	BattleSound.playEffect(this.outrourl);
+		// }
 		this.anim({
 			y: this.y - 80,
 			opacity: 0,
@@ -2624,7 +2624,7 @@ export class PokemonSprite extends Sprite {
 		}
 		this.sp = sp;
 		this.cryurl = sp.cryurl;
-		this.morphurl = sp.morphurl;
+		// this.morphurl = sp.morphurl;
 
 		if (!this.scene.animating) return;
 		let speciesid = toID(pokemon.getSpeciesForme());
@@ -2678,9 +2678,9 @@ export class PokemonSprite extends Sprite {
 				if (this.cryurl && doCry) {
 					BattleSound.playEffect(this.cryurl);
 				}
-				if (this.morphurl && doCry) {
-					BattleSound.playEffect(this.morphurl);
-				}
+				// if (this.morphurl && doCry) {
+				// 	BattleSound.playEffect(this.morphurl);
+				// }
 				this.$el.replaceWith($newEl);
 				this.$el = $newEl;
 				this.$el.animate(scene.pos({

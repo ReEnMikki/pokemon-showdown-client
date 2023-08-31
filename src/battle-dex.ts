@@ -158,9 +158,9 @@ interface SpriteData {
 	pixelated?: boolean;
 	isFrontSprite?: boolean;
 	cryurl?: string;
-	introurl?: string;
-	outrourl?: string;
-	morphurl?: string;
+	// introurl?: string;
+	// outrourl?: string;
+	// morphurl?: string;
 	shiny?: boolean;
 }
 
@@ -519,9 +519,9 @@ const Dex = new class implements ModdedDex {
 			pixelated: true,
 			isFrontSprite: false,
 			cryurl: '',
-			introurl: '',
-			outrourl: '',
-			morphurl: '',
+			// introurl: '',
+			// outrourl: '',
+			// morphurl: '',
 			shiny: options.shiny,
 		};
 		let name = species.spriteid;
@@ -573,9 +573,9 @@ const Dex = new class implements ModdedDex {
 			const randomIntroNum = Math.floor(Math.random() * 6) + 1;
 
 			spriteData.cryurl = 'audio/cries/' + baseSpeciesid;
-			spriteData.introurl = 'audio/intros/' + baseSpeciesid + randomIntroNum;
-			spriteData.outrourl = 'audio/outros/' + baseSpeciesid;
-			spriteData.morphurl = 'audio/morphs/' + baseSpeciesid;
+			// spriteData.introurl = 'audio/intros/' + baseSpeciesid + randomIntroNum;
+			// spriteData.outrourl = 'audio/outros/' + baseSpeciesid;
+			// spriteData.morphurl = 'audio/morphs/' + baseSpeciesid;
 			
 			let formeid = species.formeid;
 			if (species.isMega || formeid && (
@@ -611,9 +611,9 @@ const Dex = new class implements ModdedDex {
 				spriteData.cryurl += formeid;
 			}
 			spriteData.cryurl += '.mp3';
-			spriteData.introurl += '.mp3';
-			spriteData.outrourl += '.mp3';
-			spriteData.morphurl += '.mp3';
+			// spriteData.introurl += '.mp3';
+			// spriteData.outrourl += '.mp3';
+			// spriteData.morphurl += '.mp3';
 		}
 
 		if (options.shiny && mechanicsGen > 1) dir += '-shiny';
