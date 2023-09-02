@@ -561,6 +561,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	saharascal: 1488 + 34,
 	ababo: 1488 + 35,
 	scattervein: 1488 + 36,
+	defaulter: 1488 + 37,
 	
 	ancientoverlord: 1536 + 0,
 };
